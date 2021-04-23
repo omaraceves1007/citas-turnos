@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  url: 'https://restcountries.eu/rest/v2/all' //'http://54746900d408.ngrok.io/TCitasWebS'
+  url: 'https://restcountries.eu/rest/v2/' //'http://54746900d408.ngrok.io/TCitasWebS'
 };
 
 /*
