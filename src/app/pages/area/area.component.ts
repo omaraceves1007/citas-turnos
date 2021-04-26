@@ -16,24 +16,6 @@ export class AreaComponent implements OnInit {
   ngOnInit(): void {
     this.areaService.getHi();
   }
-  panel =1;
 
-  myFunc(valor: any){
-    console.log("-------->"+valor);
-    this.panel = valor;
-  }
-
-  buscar(){
-    this.areaService.buscar()
-    .subscribe(
-      data => {
-       console.log("datos---->"+JSON.stringify(data));
-      },
-      error => {
-       // this.modalMensajeService.modalError(error);
-
-      }
-    );
-  }
 
 }

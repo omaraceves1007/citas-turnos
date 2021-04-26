@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AreaService } from '../area.service';
 
 @Component({
   selector: 'app-buscar',
@@ -7,9 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BuscarComponent implements OnInit {
 
-  constructor() { }
+  constructor( private areaService: AreaService ) { }
 
   ngOnInit(): void {
+  }
+
+  buscar(){
+    this.areaService.buscar()
+    .subscribe(
+      data => {
+       console.log("datos---->"+JSON.stringify(data));
+      },
+      error => {
+       // this.modalMensajeService.modalError(error);
+
+      }
+    );
   }
 
 }

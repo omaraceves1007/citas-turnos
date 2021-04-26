@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AreaService } from '../area.service';
 
 @Component({
   selector: 'app-modificar',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ModificarComponent implements OnInit {
 
-  constructor() { }
+  constructor( private areaService: AreaService) { }
 
   ngOnInit(): void {
   }
