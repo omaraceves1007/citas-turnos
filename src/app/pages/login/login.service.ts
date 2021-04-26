@@ -13,7 +13,7 @@ export class LoginService {
 
   constructor( private http: HttpClient, private router: Router ) { }
 
-  private dataUrl ="/login";
+  private dataUrl ="AutenticaQa-web/api/autenticaService/login";
 
   login( data: any ): any{
     // return this.http.post( this.url , data ).pipe( map ( ( resp: any ) => {
