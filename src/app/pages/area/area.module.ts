@@ -3,9 +3,9 @@ import { CommonModule } from '@angular/common';
 import { AreaRouting } from './area.route';
 
 
-
 @NgModule({
-  declarations: [],
+  declarations: [
+  ],
   imports: [
     CommonModule,
     AreaRouting

@@ -1,0 +1,65 @@
+<section class="container">
+  <div class="row">
+    <form class="col-md-12">
+      <div class="form-group w-50">
+        <label for="exampleFormControlSelect1">Seleccionar Área</label>
+        <select class="form-control" id="exampleFormControlSelect1">
+          <option>Área 1</option>
+          <option>Área 1</option>
+        </select>
+      </div>
+
+      <div class="row">
+        <div class="form-group col-md-6">
+          <label for="exampleFormControlInput1">Nombre</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="form-check col-md-3">
+          <div class="ml-3 mt-4">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label" for="defaultCheck1">
+              Activo
+            </label>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="form-group w-100">
+        <label for="exampleFormControlSelect1">Centros de Atención</label>
+        <select class="form-control" id="exampleFormControlSelect1">
+          <option>Área 1</option>
+          <option>Área 1</option>
+        </select>
+      </div>
+
+      <div class="col-12">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Guardar</button>
+        <button type="button" class="btn btn-danger offset-1">Cancelar</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Inhabilitar Área</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Esta a punto de inhabilitar el área Crédito.</p>
+        <p>¿Estás seguro de continuar?</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-primary">Confirmar</button>
+      </div>
+    </div>
+  </div>
+</div>

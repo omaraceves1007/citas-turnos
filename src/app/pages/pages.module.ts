@@ -6,12 +6,20 @@ import { AreaComponent } from './area/area.component';
 
 import { PagesRoutingModule } from './pages.route';
 import { LoginComponent } from './login/login.component';
+import { AltaComponent } from './area/alta/alta.component';
+import { ModificarComponent } from './area/modificar/modificar.component';
+import { BuscarComponent } from './area/buscar/buscar.component';
 
 
 @NgModule({
   declarations: [
     LoginComponent,
+
     AreaComponent,
+    AltaComponent,
+    ModificarComponent,
+    BuscarComponent
+
   ],
   imports: [
     CommonModule,
