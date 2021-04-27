@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { Area } from '../area.model';
 import { AreaService } from '../area.service';
+import { fromForm } from '../../../utils/utils';
 
 declare var $: any;
 
@@ -27,21 +28,16 @@ export class ModificarComponent implements OnInit {
 
   }
 
-  formToValue(): any {
-    let value = new Area ();
-    return {...value, ...this.editForm.value };
-  }
-
   update(): void{
-    const value = this.formToValue();console.log(value)
-    // this.areaService.update( value )
-    // .subscribe(
-    //   data => {
-    //    console.log("datos---->", data);
-    //   },
-    //   error => {
-    //    console.error('Algo salio mal',error);
-    //   } );
+    const value = fromForm( this.editForm, new Area() );
+    this.areaService.update( value )
+    .subscribe(
+      data => {
+       console.log("datos---->", data);
+      },
+      error => {
+       console.error('Algo salio mal',error);
+      } );
   }
 
 }

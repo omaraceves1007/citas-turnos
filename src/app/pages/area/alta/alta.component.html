@@ -9,15 +9,15 @@
         <label for="idCentroAtencion">Centro de Atención</label>
         <select class="form-control" id="idCentroAtencion" formControlName="idCentroAtencion">
           <option value="0">Selecciona los centros de atención</option>
-          <option>Centro de Atención Barranca del Muerto</option>
-          <option>Centro de Atención Insurgentes</option>
-          <option>Centro de Atención Centro</option>
+          <option value="1">Centro de Atención Barranca del Muerto</option>
+          <option value="2">Centro de Atención Insurgentes</option>
+          <option value="3">Centro de Atención Centro</option>
         </select>
       </div>
     </div>
     <div class="form-row mt-5">
       <div class="col text-center">
-        <button type="button" class="btn btn-info ">Cancelar</button>
+        <button type="button" class="btn btn-info" (click)='limpiar()'>Cancelar</button>
       </div>
       <div class="col text-center">
         <button type="button" class="btn btn-danger " (click)="guardar()">Guardar</button>
