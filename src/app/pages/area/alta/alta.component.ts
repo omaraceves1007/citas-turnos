@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
+import { Area } from '../area.model';
 import { AreaService } from '../area.service';
 
 declare var $: any;
@@ -23,18 +24,21 @@ export class AltaComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  guardar(){
-    console.log(this.editForm);
-    // this.areaService.guardar()
-    // .subscribe(
-    //   data => {
-    //    console.log("datos---->"+JSON.stringify(data));
-    //   },
-    //   error => {
-    //    // this.modalMensajeService.modalError(error);
+  formToValue(): any {
+    let value = new Area ();
+    return {...value, ...this.editForm.value };
+  }
 
-    //   }
-    // );
+  guardar(){
+    const value = this.formToValue();
+    this.areaService.create( value )
+    .subscribe(
+      data => {
+       console.log("datos---->", data);
+      },
+      error => {
+       console.error('Algo salio mal',error);
+      } );
   }
 
 }
