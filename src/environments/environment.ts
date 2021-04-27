@@ -4,10 +4,11 @@
 
 export const environment = {
   production: false,
-  url: 'https://10.85.6.28:9443/'
+  apiUrl: 'https://10.85.3.20:9443/CitasTurnos/api/v1/'
 };
 
 /*
+ * 'localhost:9080/CitasTurnos/api/'
  * For easier debugging in development mode, you can import the following file
  * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.
  *

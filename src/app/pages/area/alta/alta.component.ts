@@ -14,15 +14,15 @@ export class AltaComponent implements OnInit {
   }
 
   guardar(){
-    this.areaService.guardar()
-    .subscribe(
-      data => {
-       console.log("datos---->"+JSON.stringify(data));
-      },
-      error => {
-       // this.modalMensajeService.modalError(error);
+    // this.areaService.guardar()
+    // .subscribe(
+    //   data => {
+    //    console.log("datos---->"+JSON.stringify(data));
+    //   },
+    //   error => {
+    //    // this.modalMensajeService.modalError(error);
 
-      }
-    );
+    //   }
+    // );
   }
 }

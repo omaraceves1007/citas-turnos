@@ -8,11 +8,11 @@ import { environment } from '../../../environments/environment';
 })
 export class AreaService {
 
-  private URL = `${environment.url}all`;
+  private URL = `${environment.apiUrl}area/test4/buscar/1`;
 
   constructor( private http: HttpClient ) { }
 
-  private dataUrl ="/area"
+  // private dataUrl ="/area"
 
   getHi(): void {
     // let headers = new HttpHeaders();
@@ -42,12 +42,12 @@ export class AreaService {
 
   }
 
-  buscar(): Observable<any> {
-    return this.http
-      .get<any>(`${this.dataUrl}/buscar/`);
-  }
-  guardar(): Observable<number> {
-    return this.http
-      .get<number>(`${this.dataUrl}/guardar/`);
-  }
+  // buscar(): Observable<any> {
+  //   return this.http
+  //     .get<any>(`${this.dataUrl}/buscar/`);
+  // }
+  // guardar(): Observable<number> {
+  //   return this.http
+  //     .get<number>(`${this.dataUrl}/guardar/`);
+  // }
 }
