@@ -1,22 +1,22 @@
 <section class="container">
-  <form>
+  <form [formGroup]="editFrom" >
     <div class="form-row">
       <div class="col">
-        <label for="exampleFormControlInput1">Nombre</label>
-        <input type="text" class="form-control" placeholder="Nombre Área">
+        <label for="nombre">Nombre</label>
+        <input type="text" class="form-control" placeholder="Nombre Área" formControlName="nombre">
       </div>
       <div class="col">
-        <label for="exampleFormControlSelect1">Centro de Atención</label>
-        <select class="form-control" id="exampleFormControlSelect1">
-          <option>Selecciona los centros de atención</option>
+        <label for="idCentroAtencion">Centro de Atención</label>
+        <select class="form-control" id="idCentroAtencion" formControlName="idCentroAtencion">
+          <option value="0">Selecciona los centros de atención</option>
           <option>Centro de Atención Barranca del Muerto</option>
           <option>Centro de Atención Insurgentes</option>
           <option>Centro de Atención Centro</option>
         </select>
       </div>
     </div>
-    <br /><br /><br />
-    <div class="form-row">
+    <!-- <br /><br /><br /> -->
+    <div class="form-row mt-5">
       <div class="col text-center">
         <button type="button" class="btn btn-info ">Cancelar</button>
       </div>

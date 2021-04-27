@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, Validators } from '@angular/forms';
 import { AreaService } from '../area.service';
 
 @Component({
@@ -8,12 +9,20 @@ import { AreaService } from '../area.service';
 })
 export class AltaComponent implements OnInit {
 
-  constructor(private areaService: AreaService) { }
+  public editFrom = this.fb.group({
+    nombre: [ null, [ Validators.required] ],
+    idCentroAtencion: [ '0', [ Validators.required ] ]
+  });
+
+  constructor( private areaService: AreaService,
+              public fb: FormBuilder
+              ) { }
 
   ngOnInit(): void {
   }
 
   guardar(){
+    console.log(this.editFrom.value);
     // this.areaService.guardar()
     // .subscribe(
     //   data => {
