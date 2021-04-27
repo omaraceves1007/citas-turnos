@@ -1,38 +1,52 @@
-<header>
+<header class="row">
   <img src="./assets/images/infonavit.png" style="width: 100px; height: 100px; margin: 10px;">
 </header>
-<main>
-  <!-- <section>
-    <ul class="nav nav-tabs">
+<main class="row">
+	<nav class="navbar bg-light col-sm-3">
+
+		<ul class="navbar-nav">
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="" role="button" aria-haspopup="true"
+        <a class="nav-link dropdown-toggle n1" data-toggle="dropdown" role="button" aria-haspopup="true"
           aria-expanded="false">Administrar y configurar el sistema</a>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" href="">Configurar centros de atencion</a>
-          <a class="dropdown-item" href="">Configurar area</a>
-          <a class="dropdown-item" href="">Configurar Categoria</a>
-        </div>
+		  
+		 
+		  <div class="col-sm-12">
+			<div class="dropdown-menu">
+			  <a class="nav-link dropdown-toggle n2" data-toggle="dropdown" role="button" aria-haspopup="true"
+			  aria-expanded="false">Configurar centros de atencion</a>
+				<div class="dropdown-menu">
+				  <a class="dropdown-item" >Configurar centros de atencion</a>
+				  <a class="dropdown-item" >Configurar area</a>
+				  <a class="dropdown-item" >Configurar Categoria</a>
+				</div>
+			  <a class="nav-link dropdown-item" >Configurar area</a>
+			  <a class="nav-link dropdown-item" >Configurar Categoria</a>
+			</div>
+		 </div>
+		
       </li>
       <li class="nav-item">
-        <a class="nav-link active" href="">Turnos</a>
+        <a class="nav-link active" >Turnos</a>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link active" href="">Citas</a>
+        <a class="nav-link active">Citas</a>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link active" href="">Seguridad</a>
+        <a class="nav-link active">Seguridad</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active" href="">Requerimientos no funcionales</a>
+        <a class="nav-link active">Requerimientos no funcionales</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active" href="">Encuestas</a>
+        <a class="nav-link active">Encuestas</a>
       </li>
     </ul>
-  </section> -->
-  <section class="container">
-    <router-outlet></router-outlet>
-  </section>
+
+	  
+	</nav>
+	<section class="col-sm-9">
+		<router-outlet></router-outlet>
+	</section>
 </main>
