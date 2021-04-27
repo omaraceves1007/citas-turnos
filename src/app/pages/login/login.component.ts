@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { LoginService } from './login.service';
+import { logging } from 'protractor';
 
 @Component({
   selector: 'app-login',
@@ -7,9 +9,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+  constructor( private loginService: LoginService) { }
 
   ngOnInit(): void {
+  }
+
+  login(): void {
+    this.loginService.login({});
+  }
+
+  registrar(){
+    // this.loginService.registrar()
+    // .subscribe(
+    //   data => {
+    //    console.log("Login---->"+JSON.stringify(data));
+    //   },
+    //   error => {
+       // this.modalMensajeService.modalError(error);
+
+      // }
+    // );
   }
 
 }

@@ -14,7 +14,7 @@ export class AreaComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.areaService.getHi();
+    // this.areaService.getHi();
   }
 
 

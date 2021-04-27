@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { AreaService } from '../area.service';
 
+declare var $: any;
+
 @Component({
   selector: 'app-modificar',
   templateUrl: './modificar.component.html',

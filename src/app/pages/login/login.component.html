@@ -1,1 +1,23 @@
-<p>login works!</p>
+<section class="container">
+    <img src="../../../assets/images/infonavit.png" class="logo" />
+    <h3 class="text-center my-5">Ingrese usuario y contraseña</h3>
+    <form class="mt-5">
+        <div class="form-row">
+            <div class="offset-3 col-6">
+                <label for="usuario">Usuario</label>
+                <input type="text" class="form-control" placeholder="Usuario">
+            </div>
+            <br>
+            <div class="offset-3 col-6">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" placeholder="Password">
+            </div>
+        </div>
+        <br /><br /><br />
+        <div class="form-row">
+            <div class="col text-center">
+                <button type="button" class="btn btn-primary" (click)="login()">Entrar</button>
+            </div>
+        </div>
+    </form>
+</section>
