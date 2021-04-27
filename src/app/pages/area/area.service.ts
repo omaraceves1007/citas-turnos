@@ -1,53 +1,51 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
 import { environment } from '../../../environments/environment';
+import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
+import { Area } from './area.model';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AreaService {
 
-  private URL = `${environment.apiUrl}area/test4/buscar/1`;
+  private URL = `${environment.apiUrl}areas`;
 
   constructor( private http: HttpClient ) { }
 
-  // private dataUrl ="/area"
-
-  getHi(): void {
-    // let headers = new HttpHeaders();
-    //   headers.append('Access-Control-Allow-Origin', '*');
-    //   headers.append('Access-Control-Allow-Methods', 'GET, POST, PATCH, PUT, DELETE, OPTIONS');
-    //   headers.append('Access-Control-Allow-Headers',' Origin, Content-Type, X-Auth-Token');
-    // this.http.get( '/', { observe: 'response' }).subscribe(res => {
-    //   console.log('respuesta');
-    //   console.log(res);
-    // }, err => {
-    //   console.log('error1')
-    //   console.error( err )
-    // });
-    // this.http.post( this.URL,{
-    //     "usuario": "test1",
-    //     "password": "test2",
-    //     "userValido": false
-    // }, { headers }
-    // ).subscribe(console.log)
-    this.http.get( this.URL, { observe: 'response' }).subscribe(res => {
-      console.log('respuesta');
-      console.log(res);
-    }, err => {
-      console.log('error2')
-      console.error( err )
-    });
-
+  getAll(): Observable<Area[]> {
+    return this.http.get( this.URL, { observe: 'response' } ).pipe( map ( ( res: any ) => {
+      return res.data;
+    }), error => error );
   }
 
-  // buscar(): Observable<any> {
-  //   return this.http
-  //     .get<any>(`${this.dataUrl}/buscar/`);
-  // }
-  // guardar(): Observable<number> {
-  //   return this.http
-  //     .get<number>(`${this.dataUrl}/guardar/`);
-  // }
+  getById( id: number ): Observable<Area> {
+    const url = `${ this.URL }/${ id }`;
+
+    return this.http.get( url, { observe: 'response' } ).pipe( map ( ( res: any ) => {
+      return res.data;
+    }), error => error );
+  }
+
+  create( area: Area ): Observable<any> {
+    return this.http.post( this.URL, area, { observe: 'response' } ).pipe( map ( ( res: any ) => {
+      return res.data;
+    }), error => error );
+  }
+
+  update( area: Area ): Observable<any> {
+    return this.http.put( this.URL, area, { observe: 'response' } ).pipe( map ( ( res: any ) => {
+      return res.data;
+    }), error => error );
+  }
+
+  delete( id: number ): Observable<Area> {
+    const url = `${ this.URL }/${ id }`;
+
+    return this.http.delete( url, { observe: 'response' } ).pipe( map ( ( res: any ) => {
+      return res.data;
+    }), error => error );
+  }
+
 }
