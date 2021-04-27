@@ -1,11 +1,11 @@
 <section class="container">
-  <form [formGroup]="editFrom" >
+  <form [formGroup]="editForm" class="needs-validation" novalidate >
     <div class="form-row">
-      <div class="col">
+      <div class="col-6">
         <label for="nombre">Nombre</label>
         <input type="text" class="form-control" placeholder="Nombre Área" formControlName="nombre">
       </div>
-      <div class="col">
+      <div class="col-12">
         <label for="idCentroAtencion">Centro de Atención</label>
         <select class="form-control" id="idCentroAtencion" formControlName="idCentroAtencion">
           <option value="0">Selecciona los centros de atención</option>
@@ -15,7 +15,6 @@
         </select>
       </div>
     </div>
-    <!-- <br /><br /><br /> -->
     <div class="form-row mt-5">
       <div class="col text-center">
         <button type="button" class="btn btn-info ">Cancelar</button>

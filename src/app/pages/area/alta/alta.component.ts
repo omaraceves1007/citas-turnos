@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { AreaService } from '../area.service';
 
+declare var $: any;
+
 @Component({
   selector: 'app-alta',
   templateUrl: './alta.component.html',
@@ -9,7 +11,7 @@ import { AreaService } from '../area.service';
 })
 export class AltaComponent implements OnInit {
 
-  public editFrom = this.fb.group({
+  editForm = this.fb.group({
     nombre: [ null, [ Validators.required] ],
     idCentroAtencion: [ '0', [ Validators.required ] ]
   });
@@ -22,7 +24,7 @@ export class AltaComponent implements OnInit {
   }
 
   guardar(){
-    console.log(this.editFrom.value);
+    console.log(this.editForm);
     // this.areaService.guardar()
     // .subscribe(
     //   data => {
@@ -34,4 +36,5 @@ export class AltaComponent implements OnInit {
     //   }
     // );
   }
+
 }
