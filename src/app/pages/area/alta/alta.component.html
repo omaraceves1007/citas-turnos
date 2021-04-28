@@ -1,17 +1,17 @@
 <section class="container bkgPanelAlta">
   <form [formGroup]="editForm" class="mt-4" novalidate >
     <div class="form-row">
-      <div class="col-6">
-        <label for="nombre">Nombre</label>
-        <input type="text" class="form-control" placeholder="Nombre Área" formControlName="nombre">
+      <div class="col">
+        <label for="exampleFormControlInput1">Nombre</label>
+        <input type="text" class="form-control" placeholder="Nombre Área">
       </div>
-      <div class="col-12">
-        <label for="idCentroAtencion">Centro de Atención</label>
-        <select class="form-control" id="idCentroAtencion" formControlName="idCentroAtencion">
-          <option value="0">Selecciona los centros de atención</option>
-          <option value="1">Centro de Atención Barranca del Muerto</option>
-          <option value="2">Centro de Atención Insurgentes</option>
-          <option value="3">Centro de Atención Centro</option>
+      <div class="col">
+        <label for="exampleFormControlSelect1">Centro de Atención</label>
+        <select class="form-control" id="exampleFormControlSelect1">
+          <option>Selecciona los centros de atención</option>
+          <option>Centro de Atención Barranca del Muerto</option>
+          <option>Centro de Atención Insurgentes</option>
+          <option>Centro de Atención Centro</option>
         </select>
       </div>
     </div>
@@ -25,3 +25,5 @@
     </div>
   </form>
 </section>
+
+

@@ -1,4 +1,5 @@
 .bkgPanelMod{
+<<<<<<< HEAD
   background-color: white;
 }
 .bkgModal{
@@ -14,3 +15,43 @@
   height: auto;
 }
 
+=======
+    background-color: white;  
+}
+.bkgModal{
+    background-color: rgb(242, 243, 245);
+}
+
+.bkgModalBody{
+    background-color: white;
+}
+
+.btnCancelar {
+    display: block;
+    width: 200px;
+    height: 40px;
+    background:rgb(86, 110, 136);
+    color: white;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.btnGuardar {
+    display: block;
+    width: 200px;
+    height: 40px;
+    background:rgb(178, 73, 90);
+    color: white;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+  }
+  
+button.centrado {
+  /*  width: 110px; /* Para que no se rompa en dos líneas, y lo translade tal cual. */
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+>>>>>>> d90eb3e2ef28a2536a60369e93596397f3a44fb1
