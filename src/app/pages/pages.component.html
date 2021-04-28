@@ -1,18 +1,5 @@
 
-<header class="row">
-  <div class="col-sm-2">  
-    <img src="./assets/images/infonavit.png" style="width: 100px; height: 100px; margin: 10px;">
-  </div>
-  <div class="col-sm-3">
-      Rol/perfil del usuario<br>
-      Nombre<br>
-      Fecha y hora<br>
-    
-  </div>
-  <div class="col-sm-7">
-    <h1>Sistema de Citas y Turnos</h1> 
-  </div>
-</header>
+<app-header></app-header>
 
 <main class="row">
   <nav class="container navbar bg-light col-sm-3">
@@ -22,12 +9,13 @@
           aria-expanded="false">Administrar y configurar el sistema</a>
       <div class="col-sm-12">
       <div class="dropdown-menu">
-        <a class="nav-link dropdown-toggle n2" data-toggle="dropdown" role="button" aria-haspopup="true"
-        aria-expanded="false">Centro de Atención</a>
-        <div class="dropdown-menu">
-          <a class="dropdown-item n3" >Configuración de centro de atención</a>
-          <a class="dropdown-item n3" >Configuración de Secciones</a>
-          <a class="dropdown-item n3" >Administración de DTE´s</a>
+          <a class="nav-link dropdown-toggle n2" data-toggle="dropdown" role="button" aria-haspopup="true"
+          aria-expanded="false">Configurar centros de atención</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item n3" >Configurar centros de atención</a>
+            <a class="dropdown-item n3" >Configurar Área</a>
+            <a class="dropdown-item n3" >Configurar Categoría</a>
+          </div>
         </div>
         <a class="nav-link dropdown-item" >Área</a>
         <a class="nav-link dropdown-item" >Categoria</a>
@@ -35,9 +23,7 @@
         <a class="nav-link dropdown-item" >Notificaciones</a>
         <a class="nav-link dropdown-item" >Alertas del Sistema</a>
       </div>
-     </div>
-
-      </li>
+     
       <li class="nav-item">
         <a class="nav-link active" >Turnos</a>
       </li>

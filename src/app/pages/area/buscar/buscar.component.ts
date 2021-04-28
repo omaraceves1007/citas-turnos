@@ -26,4 +26,21 @@ export class BuscarComponent implements OnInit {
     // );
   }
 
+  limpiar():void{
+   // this.editForm.reset();
+  }
+
+  guardar(){
+    // const value = fromForm( this.editForm, new Area () );
+    // this.areaService.create( value )
+    // .subscribe(
+    //   data => {
+    //    console.log("datos---->", data);
+    //     this.limpiar();
+    //   },
+    //   error => {
+    //    console.error('Algo salio mal',error);
+    //   } );
+  }
+
 }
