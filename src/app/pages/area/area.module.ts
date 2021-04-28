@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AreaRouting } from './area.route';
+import { AreaRoutingModule } from './area-routing.module';
 
 
 @NgModule({
@@ -8,7 +8,7 @@ import { AreaRouting } from './area.route';
   ],
   imports: [
     CommonModule,
-    AreaRouting
+    AreaRoutingModule
   ]
 })
 export class AreaModule { }
