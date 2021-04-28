@@ -14,6 +14,7 @@ import { BuscarComponent } from './area/buscar/buscar.component';
 import { PagesComponent } from './pages.component';
 import { HomeComponent } from './home/home.component';
 import { SideComponent } from '../components/side/side.component';
+import { CCategoriaAreaComponent } from './c-categoria-area/c-categoria-area.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { SideComponent } from '../components/side/side.component';
     AltaComponent,
     ModificarComponent,
     BuscarComponent,
-    HomeComponent
+    HomeComponent,
+    CCategoriaAreaComponent
 
   ],
   imports: [
@@ -42,6 +44,7 @@ import { SideComponent } from '../components/side/side.component';
   exports: [
     LoginComponent,
     AreaComponent,
+    CCategoriaAreaComponent,
   ],
   providers: [
     // { provide: HTTP_INTERCEPTORS, useClass: MyInterceptor, multi: true  }

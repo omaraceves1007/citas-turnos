@@ -1,13 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
-* {
+* 
+{
   font-family: 'Work Sans', sans-serif;
 }
+
+hr.body {border: 2px solid #666; border-radius: 300px/10px; height: 0px; text-align: center;width: 10%;}
 
 .btnCancelar {
   display: block;
   width: 200px;
   height: 40px;
-  background:rgb(86, 110, 136);
+  background: #576E8A;
   color: white;
   border-radius: 15px 15px 15px 15px;
 }
@@ -16,13 +19,33 @@
   display: block;
   width: 200px;
   height: 40px;
-  background:rgb(178, 73, 90);
+  background:#B1495A;
   color: white;
   border-radius: 15px 15px 15px 15px;
+}
+
+.bkgPanel{
+  background-color: rgb(242, 243, 245);
+}
+
+.bkgSubPanel{
+  background-color: white;
 }
 
 button.centrado {
 /*  width: 110px; /* Para que no se rompa en dos líneas, y lo translade tal cual. */
   margin-left: 50%;
   transform: translateX(-50%);
+}
+
+button.centrado {
+/*  width: 110px; /* Para que no se rompa en dos líneas, y lo translade tal cual. */
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+table thead {
+  color: #1F3E63;
+  background-color: #ECD1D6;
+  
 }
