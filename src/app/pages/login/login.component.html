@@ -1,23 +1,29 @@
-<section class="container">
-    <img src="../../../assets/images/infonavit.png" class="logo" />
-    <h3 class="text-center my-5">Ingrese usuario y contraseña</h3>
-    <form class="mt-5">
-        <div class="form-row">
-            <div class="offset-3 col-6">
+
+<div class="container">
+    
+    <div class="row headerLogin">
+        <div class="row">
+            <div class="col-sm" style="text-align: center;">
+                <img src="../../../assets/images/infonavit.png" class="logo" />
+                <h3 class="text-center my-4">Ingrese usuario y contraseña</h3>
+            </div>
+        </div>
+        <div class="row bodyLogin">
+            <div class="col-sm">
                 <label for="usuario">Usuario</label>
-                <input type="text" class="form-control" placeholder="Usuario">
+                <input type="text" class="form-control" placeholder="Escriba el usuario">
             </div>
-            <br>
-            <div class="offset-3 col-6">
+            <div class="w-100"></div>
+            <div class="col-sm">
                 <label for="password">Password</label>
-                <input type="password" class="form-control" placeholder="Contraseña">
+                <input type="password" class="form-control" placeholder="Escriba la contraseña">
+            </div>
+            <div class="w-100"></div>
+            <br><br>
+            <div class="col" style="text-align: center;">
+                <button type="button" class="btnPrime" (click)="login()">Ingresar</button>
             </div>
         </div>
-        <br /><br /><br />
-        <div class="form-row">
-            <div class="col text-center">
-                <button type="button" class="btn btn-primary" (click)="login()">Ingresar</button>
-            </div>
-        </div>
-    </form>
-</section>
+    </div>
+
+</div>
