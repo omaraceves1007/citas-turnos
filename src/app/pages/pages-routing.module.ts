@@ -15,6 +15,10 @@ const routes: Routes = [
     loadChildren: () => import('./c-categoria-area/c-categoria-area.module').then( m => m.cCategoriaAreaModule )
   },
   // { path: '**', redirectTo: 'app/dashboard', pathMatch: 'full' }
+  { path: 'servicio',
+  // canActivate: [ VerificaUserGuard ],
+  loadChildren: () => import('./servicio/servicio.module').then( m => m.ServicioModule )
+  },
 ];
 
 @NgModule({

@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { HttpClientModule, /* HTTP_INTERCEPTORS */ } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AreaComponent } from './area/area.component';
+import { ServicioComponent } from './servicio/servicio.component';
 
 import { PagesRoutingModule } from './pages-routing.module';
 import { LoginComponent } from './login/login.component';
@@ -15,6 +16,7 @@ import { PagesComponent } from './pages.component';
 import { HomeComponent } from './home/home.component';
 import { SideComponent } from '../components/side/side.component';
 import { CCategoriaAreaComponent } from './c-categoria-area/c-categoria-area.component';
+import { AltaServicioComponent } from './servicio/alta-servicio/alta-servicio.component';
 
 
 @NgModule({
@@ -30,7 +32,9 @@ import { CCategoriaAreaComponent } from './c-categoria-area/c-categoria-area.com
     ModificarComponent,
     BuscarComponent,
     HomeComponent,
-    CCategoriaAreaComponent
+    CCategoriaAreaComponent,
+    ServicioComponent,
+    AltaServicioComponent,
 
   ],
   imports: [
@@ -45,6 +49,7 @@ import { CCategoriaAreaComponent } from './c-categoria-area/c-categoria-area.com
     LoginComponent,
     AreaComponent,
     CCategoriaAreaComponent,
+    ServicioComponent,
   ],
   providers: [
     // { provide: HTTP_INTERCEPTORS, useClass: MyInterceptor, multi: true  }
