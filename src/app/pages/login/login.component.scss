@@ -2,3 +2,32 @@
   width: 100px;
   height: auto;
 }
+.headerLogin {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 30%;
+    height: 40%;
+    margin: auto;
+}
+.bodyLogin {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 300px;
+    margin: auto;
+}
+.btnPrime.ui-button-text-only {
+    background: #d32d38;
+    border-color: #C0C0C0;
+    color: #fff;
+    font-size: 11px;
+  }
+
+  .btnPrime.ui-button-text-only:hover {
+    background:rgb(192, 3, 3);
+    border-color: #C0C0C0;
+  }

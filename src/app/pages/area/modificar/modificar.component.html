@@ -1,4 +1,4 @@
-<section class="container">
+<section class="container bkgPanelMod">
   <div class="row">
     <form class="col-md-12" [formGroup]="editForm">
       <div class="form-group w-50">
@@ -35,10 +35,10 @@
 
       <div class="row mt-5">
         <div class="col text-center">
-          <button type="button" class="btn btn-info">Cancelar</button>
+          <button type="button" class="btn btnCancelar centrado">Cancelar</button>
         </div>
         <div class="col text-center">
-          <button type="button" class="btn btn-danger" data-toggle="modal" (click)="update()">Guardar</button><!--  data-target="#exampleModal" -->
+          <button type="button" class="btn btnGuardar centrado" data-toggle="modal" (click)="update()">Guardar</button><!--  data-target="#exampleModal" -->
         </div>
       </div>
     </form>

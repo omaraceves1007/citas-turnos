@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  font-family: 'Work Sans', sans-serif;
+}
+
+.btnCancelar {
+  display: block;
+  width: 200px;
+  height: 40px;
+  background:rgb(86, 110, 136);
+  color: white;
+  border-radius: 15px 15px 15px 15px;
+}
+
+.btnGuardar {
+  display: block;
+  width: 200px;
+  height: 40px;
+  background:rgb(178, 73, 90);
+  color: white;
+  border-radius: 15px 15px 15px 15px;
+}
+
+button.centrado {
+/*  width: 110px; /* Para que no se rompa en dos líneas, y lo translade tal cual. */
+  margin-left: 50%;
+  transform: translateX(-50%);
+}

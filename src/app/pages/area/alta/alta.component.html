@@ -1,5 +1,5 @@
-<section class="container">
-  <form [formGroup]="editForm" class="needs-validation" novalidate >
+<section class="container bkgPanelAlta">
+  <form [formGroup]="editForm" class="mt-4" novalidate >
     <div class="form-row">
       <div class="col-6">
         <label for="nombre">Nombre</label>
@@ -17,10 +17,10 @@
     </div>
     <div class="form-row mt-5">
       <div class="col text-center">
-        <button type="button" class="btn btn-info" (click)='limpiar()'>Cancelar</button>
+        <button type="button" class="btn btnCancelar centrado" (click)='limpiar()'>Cancelar</button>
       </div>
       <div class="col text-center">
-        <button type="button" class="btn btn-danger " (click)="guardar()">Guardar</button>
+        <button type="button" class="btn btnGuardar centrado" (click)="guardar()">Guardar</button>
       </div>
     </div>
   </form>
