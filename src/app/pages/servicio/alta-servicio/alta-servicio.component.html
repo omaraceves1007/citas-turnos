@@ -1,0 +1,31 @@
+<p>alta-servicio works!</p>
+<section class="container bkgPanelAlta">
+    <form [formGroup]="editForm" class="mt-4" novalidate >
+      <div class="form-row">
+        <div class="col">
+          <label for="exampleFormControlInput1">Nombre</label>
+          <input type="text" class="form-control" placeholder="Nombre Área">
+        </div>
+        <div class="col">
+          <label for="exampleFormControlSelect1">Centro de Atención</label>
+          <select class="form-control" id="exampleFormControlSelect1">
+            <option>Selecciona los centros de atención</option>
+            <option>Centro de Atención Barranca del Muerto</option>
+            <option>Centro de Atención Insurgentes</option>
+            <option>Centro de Atención Centro</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-row mt-5">
+        <div class="col text-center">
+          <button type="button" class="btn btnCancelar centrado" (click)="limpiar()">Cancelar</button>
+        </div>      
+        <div class="col text-center">
+          <button type="button" class="btn btnGuardar centrado" (click)='guardar()'>Guardar</button>
+        </div>
+      </div>
+    </form>
+  </section>
+  
+  
+  
