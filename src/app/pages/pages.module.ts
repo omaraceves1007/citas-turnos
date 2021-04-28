@@ -12,6 +12,8 @@ import { AltaComponent } from './area/alta/alta.component';
 import { ModificarComponent } from './area/modificar/modificar.component';
 import { BuscarComponent } from './area/buscar/buscar.component';
 import { PagesComponent } from './pages.component';
+import { HomeComponent } from './home/home.component';
+import { SideComponent } from '../components/side/side.component';
 
 
 @NgModule({
@@ -20,11 +22,13 @@ import { PagesComponent } from './pages.component';
     LoginComponent,
 
     HeaderComponent,
+    SideComponent,
 
     AreaComponent,
     AltaComponent,
     ModificarComponent,
-    BuscarComponent
+    BuscarComponent,
+    HomeComponent
 
   ],
   imports: [
