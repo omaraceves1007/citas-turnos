@@ -10,6 +10,10 @@ const routes: Routes = [
     // canActivate: [ VerificaUserGuard ],
     loadChildren: () => import('./area/area.module').then( m => m.AreaModule )
   },
+  { path: 'categoriaArea',
+    // canActivate: [ VerificaUserGuard ],
+    loadChildren: () => import('./c-categoria-area/c-categoria-area.module').then( m => m.cCategoriaAreaModule )
+  },
   // { path: '**', redirectTo: 'app/dashboard', pathMatch: 'full' }
 ];
 
