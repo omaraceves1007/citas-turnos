@@ -1,61 +1,68 @@
-<section class="container bkgPanelMod">
-  <br><br>
-  
-  <form>
-      <div class="form-row">
-        <div class="col">
-          <label for="exampleFormControlSelect1">Seleccionar Área</label>
-          <select class="form-control" id="exampleFormControlSelect1">
-            <option>Área 1</option>
-            <option>Área 2</option>
-          </select>
-        </div>
-        <div class="col">
+<section class="container">
+  <div class="row">
+    <form class="col-md-12" [formGroup]="editForm">
+      <div class="form-group w-50">
+        <label for="exampleFormControlSelect1">Seleccionar Área</label>
+        <select class="form-control" id="exampleFormControlSelect1" formControlName="id">
+          <option>Área 1</option>
+          <option>Área 1</option>
+        </select>
+      </div>
+
+      <div class="row">
+        <div class="form-group col-md-6">
           <label for="exampleFormControlInput1">Nombre</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre Área" formControlName="nombre">
         </div>
-        <div class="col-2" style="vertical-align: middle;">
-            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+        <div class="form-check col-md-3">
+          <div class="ml-3 mt-4">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" formControlName="activo">
             <label class="form-check-label" for="defaultCheck1">
-                Activo
+              Activo
             </label>
+          </div>
         </div>
-      </div>
-      <br>
-      <div class="form-row">
-        <div class="col-5">
-          <label for="exampleFormControlSelect1">Centros de Atención</label>
-          <select class="form-control" id="exampleFormControlSelect1">
-            <option>Centro de Atención 1</option>
-            <option>Centro de Atención 2</option>
-          </select>
-        </div>
-        <div class="col"></div>  
       </div>
 
+
+      <div class="form-group w-100">
+        <label for="exampleFormControlSelect1">Centros de Atención</label>
+        <select class="form-control" id="exampleFormControlSelect1" formControlName="idCentroAtencion">
+          <option>Área 1</option>
+          <option>Área 1</option>
+        </select>
+      </div>
+
+      <div class="row mt-5">
+        <div class="col text-center">
+          <button type="button" class="btn btn-info">Cancelar</button>
+        </div>
+        <div class="col text-center">
+          <button type="button" class="btn btn-danger" data-toggle="modal" (click)="update()">Guardar</button><!--  data-target="#exampleModal" -->
+        </div>
+      </div>
     </form>
-  
-  <br><br>
-
+  </div>
 </section>
 
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content bkgModal">
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
       <div class="modal-header">
+        <h5 class="modal-title">Inhabilitar Área</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body text-center bkgModalBody">
-        Estás a punto de Inhabilitar el área de Crédito.<br>
-        ¿Estás seguro de continuar?
+      <div class="modal-body">
+        <p>Esta a punto de inhabilitar el área Crédito.</p>
+        <p>¿Estás seguro de continuar?</p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btnCancelar" data-dismiss="modal">Cancelar</button>
-        <button type="button" class="btnGuardar">confirmar</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-primary">Confirmar</button>
       </div>
     </div>
   </div>
