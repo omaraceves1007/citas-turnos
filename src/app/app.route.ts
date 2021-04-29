@@ -13,7 +13,7 @@ const routes: Routes = [
         // canActivate: [ LoginGuard ],
         loadChildren: './pages/pages.module#PagesModule'
     },
-    {path: '**', redirectTo:'login', pathMatch: 'full' }
+    // {path: '**', component: LoginComponent, }
 ];
 
 export const APP_ROUTES = RouterModule.forRoot( routes, { useHash: true } );
