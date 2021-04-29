@@ -3,16 +3,20 @@
     <form [formGroup]="editForm" class="mt-4" novalidate >
       <div class="form-row">
         <div class="col">
-          <label for="exampleFormControlInput1">Nombre</label>
+          <label for="exampleFormControlInput1">ID de servicio</label>
           <input type="text" class="form-control" placeholder="Nombre Área">
         </div>
         <div class="col">
-          <label for="exampleFormControlSelect1">Centro de Atención</label>
-          <select class="form-control" id="exampleFormControlSelect1">
-            <option>Selecciona los centros de atención</option>
-            <option>Centro de Atención Barranca del Muerto</option>
-            <option>Centro de Atención Insurgentes</option>
-            <option>Centro de Atención Centro</option>
+          <label for="exampleFormControlInput1">Descripción del servicio</label>
+          <input type="text" class="form-control" placeholder="Nombre Área">
+        </div>
+        <div class="col">
+          <label for="exampleFormControlSelect1">Seleccionar servicios</label>
+          <select class="form-control" id="exampleFormControlSelect1" multiple>
+            <option>Crédito asesoría</option>
+            <option>Crédito trámite</option>
+            <option>Escrituras</option>
+            <option>Credito Trámite</option>
           </select>
         </div>
       </div>
