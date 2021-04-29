@@ -16,7 +16,7 @@ export class AltaServicioComponent implements OnInit {
     idCentroAtencion: [ null, [ Validators.required ] ]
   });
 
-  constructor( private areaService: ServicioService,
+  constructor( private servicioService: ServicioService,
               public fb: FormBuilder
               ) { }
 
@@ -29,7 +29,7 @@ export class AltaServicioComponent implements OnInit {
 
   guardar(){
     const value = fromForm( this.editForm, new Servicio () );
-    this.areaService.create( value )
+    this.servicioService.create( value )
     .subscribe(
       data => {
        console.log("datos---->", data);

@@ -28,14 +28,14 @@ export class ServicioService {
     }), error => error );
   }
 
-  create( area: Servicio ): Observable<any> {
-    return this.http.post( this.URL, area, { observe: 'response' } ).pipe( map ( ( res: any ) => {
+  create( servicio: Servicio ): Observable<any> {
+    return this.http.post( this.URL, servicio, { observe: 'response' } ).pipe( map ( ( res: any ) => {
       return res.data;
     }), error => error );
   }
 
-  update( area: Servicio ): Observable<any> {
-    return this.http.put( this.URL, area, { observe: 'response' } ).pipe( map ( ( res: any ) => {
+  update( servicio: Servicio ): Observable<any> {
+    return this.http.put( this.URL, servicio, { observe: 'response' } ).pipe( map ( ( res: any ) => {
       return res.data;
     }), error => error );
   }

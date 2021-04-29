@@ -1,20 +1,38 @@
-<p>alta-servicio works!</p>
 <section class="container bkgPanelAlta">
     <form [formGroup]="editForm" class="mt-4" novalidate >
-      <div class="form-row">
-        <div class="col">
-          <label for="exampleFormControlInput1">Nombre</label>
-          <input type="text" class="form-control" placeholder="Nombre Área">
-        </div>
-        <div class="col">
-          <label for="exampleFormControlSelect1">Centro de Atención</label>
-          <select class="form-control" id="exampleFormControlSelect1">
-            <option>Selecciona los centros de atención</option>
-            <option>Centro de Atención Barranca del Muerto</option>
-            <option>Centro de Atención Insurgentes</option>
-            <option>Centro de Atención Centro</option>
+      <div class="form-row col-md-12">
+        <div class="form-group w-100">
+          <div class="row">
+            <div class="col">
+              <label for="exampleFormControlInput1">ID de servicio</label>
+              <input type="text" class="form-control" placeholder="ID de servicio">
+            </div>
+            <div class="col">
+              <label for="exampleFormControlInput1">Descripción del servicio</label>
+              <input type="text" class="form-control" placeholder="Descripción">
+            </div>
+          </div>
+|       <div class="col">
+        <div class="row">
+          <label for="exampleFormControlSelect1">Seleccionar servicios</label>
+          <select class="form-control" id="exampleFormControlSelect1" multiple>
+            <option>Crédito asesoría</option>
+            <option>Crédito trámite</option>
+            <option>Escrituras</option>
+            <option>Crédito Trámite</option>
           </select>
         </div>
+        </div>
+        
+        <div class="form-group w-50">
+          <div class="row">
+            <div class="col">
+              <label for="exampleFormControlInput1">Fecha de registro</label>
+              <input type="text" class="form-control" placeholder="dd/mm/yyyy">
+            </div>
+          </div> 
+          </div>
+
       </div>
       <div class="form-row mt-5">
         <div class="col text-center">
@@ -23,6 +41,7 @@
         <div class="col text-center">
           <button type="button" class="btn btnGuardar centrado" (click)='guardar()'>Guardar</button>
         </div>
+      </div>
       </div>
     </form>
   </section>
